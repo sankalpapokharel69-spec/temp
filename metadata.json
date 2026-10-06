@@ -1,0 +1,6 @@
+{
+  "name": "WebCraft Studio - Website Templates Marketplace",
+  "description": "Production-ready website templates marketplace. Browse, preview, buy, and download responsive modern templates for restaurants, hotels, portfolios, and businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

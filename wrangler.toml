@@ -1,0 +1,24 @@
+name = "webcraft-studio-api"
+main = "worker.js"
+compatibility_date = "2024-04-01"
+
+[vars]
+ENVIRONMENT = "production"
+CORS_ORIGIN = "*"
+JWT_SECRET = "webcraft_super_secret_production_key_cf_2026"
+
+# Cloudflare D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "webcraft-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+# Cloudflare R2 Bucket for template files and screenshots
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "webcraft-assets"
+
+# Cloudflare KV for session storage (optional if using signed JWT)
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "00000000000000000000000000000000"
